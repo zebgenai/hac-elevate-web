@@ -51,17 +51,17 @@ const ProgramsSection = () => {
     <section id="programs" className="py-20 bg-gradient-to-br from-secondary via-white to-muted">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+        <div className="text-center mb-16 animate-slide-up">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-bounce-in">
             📚 Academic Programs
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-slide-up animate-delay-200">
             Choose Your{' '}
             <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
               Academic Path
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-up animate-delay-300">
             Comprehensive educational programs designed to unlock your potential and secure your future success
           </p>
         </div>
@@ -73,8 +73,7 @@ const ProgramsSection = () => {
             return (
               <Card 
                 key={index} 
-                className="program-card group h-full"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className={`program-card group h-full hover-lift transition-all duration-500 animate-slide-up animate-delay-${(index + 4) * 100}`}
               >
                 <CardContent className="p-0 h-full">
                   {/* Icon Header */}

@@ -35,9 +35,9 @@ const HeroSection = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight animate-slide-up">
             Join{' '}
-            <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent animate-bounce-in animate-delay-300">
               Harvard Academy
             </span>
             <br />
@@ -46,7 +46,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtext */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up animate-delay-200">
             Concept-based learning with top faculty at{' '}
             <span className="font-semibold text-accent">Gulbahar #1, Mardan Road, Charsadda</span>
             <br />
@@ -54,18 +54,18 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12 animate-slide-up animate-delay-400">
             <Button
               onClick={() => window.open('https://wa.me/923116040400', '_blank')}
-              className="btn-hero text-lg px-10 py-5 flex items-center gap-3 group"
+              className="btn-hero text-lg px-10 py-5 flex items-center gap-3 group hover-lift transition-all duration-300"
             >
-              <MessageCircle size={22} className="group-hover:rotate-12 transition-transform" />
+              <MessageCircle size={22} className="group-hover:rotate-12 transition-transform animate-float" />
               WhatsApp Us Now
             </Button>
             
             <Button
               onClick={scrollToAdmissions}
-              className="btn-secondary text-lg px-10 py-5 flex items-center gap-3 group"
+              className="btn-secondary text-lg px-10 py-5 flex items-center gap-3 group hover-scale-105 transition-all duration-300"
             >
               Apply Now
               <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform" />
@@ -73,14 +73,14 @@ const HeroSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto animate-slide-up animate-delay-500">
             {[
               { number: '500+', label: 'Students' },
               { number: '15+', label: 'Expert Faculty' },
               { number: '95%', label: 'Success Rate' },
               { number: '8+', label: 'Years Excellence' },
             ].map((stat, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className={`text-center animate-bounce-in animate-delay-${(index + 6) * 100}`}>
                 <div className="text-3xl md:text-4xl font-bold text-accent mb-2">
                   {stat.number}
                 </div>

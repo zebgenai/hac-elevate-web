@@ -104,29 +104,29 @@ Please contact me for admission details.`;
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent-foreground text-sm font-medium mb-6">
+        <div className="text-center mb-16 animate-slide-up">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent-foreground text-sm font-medium mb-6 animate-bounce-in">
             📝 Admissions Open
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-slide-up animate-delay-200">
             Secure Your{' '}
             <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
               Academic Future
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-up animate-delay-300">
             Join thousands of successful students who chose Harvard Academy Charsadda for their educational journey
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Admission Form */}
-          <div className="glass-form animate-fade-in-up">
+          <div className="glass-form animate-slide-in-left">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-foreground mb-2">
+              <h3 className="text-2xl font-bold text-foreground mb-2 animate-bounce-in">
                 Apply Now
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground animate-slide-up animate-delay-200">
                 Fill out the form below and we'll contact you within 24 hours
               </p>
             </div>
@@ -238,18 +238,18 @@ Please contact me for admission details.`;
           </div>
 
           {/* Admission Highlights */}
-          <div className="space-y-8">
-            <div className="glass-card p-8 text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-accent to-accent-light rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="space-y-8 animate-slide-in-right">
+            <div className="glass-card p-8 text-center hover-lift">
+              <div className="w-16 h-16 bg-gradient-to-r from-accent to-accent-light rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-in animate-pulse-glow">
                 <Award size={32} className="text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
+              <h3 className="text-2xl font-bold text-foreground mb-4 animate-slide-up animate-delay-200">
                 Admissions Now Open!
               </h3>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground mb-6 animate-slide-up animate-delay-300">
                 Limited seats available. Early bird gets 20% discount on admission fee.
               </p>
-              <div className="text-accent font-bold text-lg">
+              <div className="text-accent font-bold text-lg animate-bounce-in animate-delay-400">
                 Deadline: December 31, 2024
               </div>
             </div>
@@ -258,7 +258,7 @@ Please contact me for admission details.`;
               {admissionHighlights.map((highlight, index) => {
                 const IconComponent = highlight.icon;
                 return (
-                  <Card key={index} className="group hover:shadow-lg transition-all duration-300">
+                  <Card key={index} className={`group hover:shadow-lg transition-all duration-300 hover-lift animate-slide-up animate-delay-${(index + 5) * 100}`}>
                     <CardContent className="p-6 text-center">
                       <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                         <IconComponent size={24} />

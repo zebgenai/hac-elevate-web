@@ -10,12 +10,12 @@ const WhatsAppFloat = () => {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className="btn-whatsapp flex items-center justify-center group"
+      className="btn-whatsapp flex items-center justify-center group animate-bounce-in animate-delay-500"
       aria-label="Contact us on WhatsApp"
     >
       <MessageCircle 
         size={28} 
-        className="group-hover:rotate-12 transition-transform duration-300" 
+        className="group-hover:rotate-12 transition-transform duration-300 animate-pulse-glow" 
       />
       
       {/* Pulse rings */}

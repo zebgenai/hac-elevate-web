@@ -43,17 +43,17 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 via-white to-accent/5">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent-foreground text-sm font-medium mb-6">
+        <div className="text-center mb-16 animate-slide-up">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent-foreground text-sm font-medium mb-6 animate-bounce-in">
             📞 Get In Touch
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-slide-up animate-delay-200">
             Contact{' '}
             <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
               Harvard Academy
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-up animate-delay-300">
             Ready to start your academic journey? Get in touch with us today for admissions, queries, or campus visits.
           </p>
         </div>
@@ -66,7 +66,7 @@ const ContactSection = () => {
               return (
                 <Card 
                   key={index} 
-                  className="group cursor-pointer hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+                  className={`group cursor-pointer hover:shadow-xl hover-lift transition-all duration-500 animate-slide-up animate-delay-${(index + 4) * 100}`}
                   onClick={contact.action}
                 >
                   <CardContent className="p-6">
