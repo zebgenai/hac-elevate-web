@@ -21,8 +21,12 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
-                  <span className="text-primary font-bold text-xl">H</span>
+                <div className="w-12 h-12 rounded-full bg-white p-1">
+                  <img 
+                    src="/harvard-academy-logo.png" 
+                    alt="Harvard Academy Charsadda Logo" 
+                    className="w-full h-full object-contain rounded-full"
+                  />
                 </div>
                 <div>
                   <h3 className="font-bold text-xl">Harvard Academy</h3>
