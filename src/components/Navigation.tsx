@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, MessageCircle } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +17,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Programs', href: '/#programs' },
-    { name: 'Admissions', href: '/#admissions' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Home', href: '/', isRouter: true },
+    { name: 'About', href: '/about', isRouter: true },
+    { name: 'Programs', href: '/#programs', isRouter: false },
+    { name: 'Admissions', href: '/#admissions', isRouter: false },
+    { name: 'Contact', href: '/#contact', isRouter: false },
   ];
 
   return (
@@ -56,15 +58,27 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className={`font-medium transition-colors hover:text-accent ${
-                  isScrolled ? 'text-foreground' : 'text-white'
-                }`}
-              >
-                {item.name}
-              </a>
+              item.isRouter ? (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`font-medium transition-colors hover:text-accent ${
+                    isScrolled ? 'text-foreground' : 'text-white'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={`font-medium transition-colors hover:text-accent ${
+                    isScrolled ? 'text-foreground' : 'text-white'
+                  }`}
+                >
+                  {item.name}
+                </a>
+              )
             ))}
             <Button
               onClick={() => window.open('https://wa.me/923116040400', '_blank')}
@@ -91,14 +105,25 @@ const Navigation = () => {
           <div className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-lg">
             <div className="p-6 space-y-4">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block font-medium text-foreground hover:text-accent transition-colors"
-                >
-                  {item.name}
-                </a>
+                item.isRouter ? (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block font-medium text-foreground hover:text-accent transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block font-medium text-foreground hover:text-accent transition-colors"
+                  >
+                    {item.name}
+                  </a>
+                )
               ))}
               <Button
                 onClick={() => {
