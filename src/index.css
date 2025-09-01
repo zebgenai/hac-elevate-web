@@ -132,8 +132,9 @@
   .btn-hero {
     @apply inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-full;
     @apply bg-gradient-to-r from-accent to-accent-light text-accent-foreground;
-    @apply shadow-lg shadow-shadow-glow hover:scale-105 active:scale-95;
+    @apply shadow-lg hover:scale-105 active:scale-95;
     @apply transition-all duration-300 ease-out;
+    box-shadow: 0 4px 14px 0 hsla(var(--shadow-glow)), 0 10px 25px -5px rgba(0, 0, 0, 0.1);
     animation: pulse-glow 2s ease-in-out infinite alternate;
   }
   
