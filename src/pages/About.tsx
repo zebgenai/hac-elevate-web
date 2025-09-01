@@ -18,7 +18,8 @@ import {
   MessageCircle,
   ExternalLink,
   Linkedin,
-  Phone
+  Phone,
+  Instagram
 } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
@@ -279,8 +280,12 @@ const About = () => {
             <CardContent className="p-8 md:p-12">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 <div className="text-center lg:text-left">
-                  <div className="w-32 h-32 bg-gradient-to-br from-primary to-secondary rounded-full mx-auto lg:mx-0 mb-6 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-white">AZ</span>
+                  <div className="w-32 h-32 rounded-full mx-auto lg:mx-0 mb-6 overflow-hidden border-4 border-primary/20">
+                    <img 
+                      src="/lovable-uploads/1fd8e40a-9189-4df8-b497-e128731fd09c.png" 
+                      alt="Atif Zeb - Cybersecurity Analyst & AI Developer"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-2">Atif Zeb</h3>
                   <p className="text-lg text-primary mb-4">Cybersecurity Analyst | AI & Chatbot Developer</p>
@@ -296,6 +301,14 @@ const About = () => {
                     >
                       <Linkedin className="w-4 h-4" />
                       LinkedIn
+                    </Button>
+                    <Button 
+                      onClick={() => window.open('https://www.instagram.com/atifzeb_/', '_blank')}
+                      variant="outline"
+                      className="flex items-center gap-2"
+                    >
+                      <Instagram className="w-4 h-4" />
+                      Instagram
                     </Button>
                     <Button 
                       onClick={handleDeveloperWhatsApp}
