@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import aboutHeroDark from '@/assets/about-hero-dark.jpg';
 
 const About = () => {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
@@ -124,8 +125,8 @@ const About = () => {
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-secondary opacity-90"></div>
-        <div className="absolute inset-0 bg-[url('/src/assets/hero-bg.jpg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary-light/70 to-secondary/80"></div>
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${aboutHeroDark})` }}></div>
         
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">

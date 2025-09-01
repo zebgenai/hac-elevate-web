@@ -19,9 +19,6 @@ const Navigation = () => {
     { name: 'About', href: '/about' },
     { name: 'Programs', href: '/#programs' },
     { name: 'Admissions', href: '/#admissions' },
-    { name: 'Scholarships', href: '/#scholarships' },
-    { name: 'Faculty', href: '/#faculty' },
-    { name: 'Gallery', href: '/#gallery' },
     { name: 'Contact', href: '/#contact' },
   ];
 
