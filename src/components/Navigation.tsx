@@ -15,13 +15,14 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Programs', href: '#programs' },
-    { name: 'Admissions', href: '#admissions' },
-    { name: 'Scholarships', href: '#scholarships' },
-    { name: 'Faculty', href: '#faculty' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Programs', href: '/#programs' },
+    { name: 'Admissions', href: '/#admissions' },
+    { name: 'Scholarships', href: '/#scholarships' },
+    { name: 'Faculty', href: '/#faculty' },
+    { name: 'Gallery', href: '/#gallery' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
