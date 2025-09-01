@@ -169,7 +169,7 @@
   
   /* Program Cards */
   .program-card {
-    @apply group relative p-6 rounded-2xl bg-white;
+    @apply relative p-6 rounded-2xl bg-white;
     @apply border border-border hover:border-primary/20;
     @apply shadow-sm hover:shadow-xl hover:-translate-y-2;
     @apply transition-all duration-500 ease-out cursor-pointer;
