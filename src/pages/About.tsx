@@ -125,57 +125,103 @@ const About = () => {
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary-light/70 to-secondary/80"></div>
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${aboutHeroDark})` }}></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-purple-600/80 to-accent/90"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url(${aboutHeroDark})` }}></div>
         
-        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            About Harvard Academy Charsadda
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Empowering Students for a Brighter Future
-          </p>
-          <p className="text-lg mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            Harvard Academy Charsadda is committed to academic excellence and skill-building in the heart of Charsadda.
-          </p>
-          <Button 
-            onClick={scrollToPrograms}
-            className="btn-hero text-lg px-8 py-4 animate-fade-in"
-            style={{ animationDelay: '0.9s' }}
-          >
-            Explore Programs
-          </Button>
+        {/* Animated background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute w-96 h-96 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-3xl top-20 -left-48 animate-float"></div>
+          <div className="absolute w-80 h-80 bg-gradient-to-l from-secondary/20 to-primary/20 rounded-full blur-3xl bottom-20 -right-40 animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute w-64 h-64 bg-gradient-to-br from-accent/20 to-purple-500/20 rounded-full blur-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-pulse-glow"></div>
+        </div>
+        
+        <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
+          <div className="backdrop-blur-sm bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-slide-up bg-gradient-to-r from-white via-accent-light to-white bg-clip-text text-transparent">
+              About Harvard Academy
+            </h1>
+            <h2 className="text-3xl md:text-5xl font-semibold mb-8 text-accent-light animate-slide-up" style={{ animationDelay: '0.3s' }}>
+              Charsadda
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-light to-accent-glow mx-auto mb-8 animate-slide-up" style={{ animationDelay: '0.5s' }}></div>
+            <p className="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up leading-relaxed" style={{ animationDelay: '0.7s' }}>
+              Empowering Students for a <span className="text-accent-light font-semibold">Brighter Future</span>
+            </p>
+            <p className="text-lg mb-10 max-w-3xl mx-auto animate-slide-up opacity-80 leading-relaxed" style={{ animationDelay: '0.9s' }}>
+              Harvard Academy Charsadda is committed to academic excellence and skill-building in the heart of Charsadda, where innovation meets tradition.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '1.1s' }}>
+              <Button 
+                onClick={scrollToPrograms}
+                className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-glow text-white text-lg px-10 py-4 rounded-full shadow-2xl hover:shadow-accent/25 transition-all duration-300 transform hover:scale-105"
+              >
+                <Star className="w-5 h-5 mr-2" />
+                Explore Programs
+              </Button>
+              <Button 
+                onClick={handleWhatsApp}
+                variant="outline"
+                className="border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm text-lg px-10 py-4 rounded-full"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Get In Touch
+              </Button>
+            </div>
+          </div>
         </div>
 
-        {/* Floating shapes */}
-        <div className="floating-shape w-20 h-20 bg-white/10 rounded-full absolute top-20 left-20"></div>
-        <div className="floating-shape w-16 h-16 bg-accent/20 rounded-full absolute bottom-32 right-16" style={{ animationDelay: '2s' }}></div>
-        <div className="floating-shape w-12 h-12 bg-white/15 rounded-full absolute top-1/3 right-1/4" style={{ animationDelay: '4s' }}></div>
+        {/* Enhanced floating elements */}
+        <div className="absolute w-32 h-32 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full top-20 left-20 animate-float blur-sm"></div>
+        <div className="absolute w-24 h-24 bg-gradient-to-tl from-secondary/20 to-primary/20 rounded-full bottom-32 right-16 animate-float blur-sm" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute w-16 h-16 bg-gradient-to-r from-accent/20 to-purple-500/20 rounded-full top-1/3 right-1/4 animate-float blur-sm" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute w-20 h-20 bg-gradient-to-bl from-white/10 to-accent/10 rounded-full top-1/4 left-1/3 animate-float blur-sm" style={{ animationDelay: '1s' }}></div>
       </section>
 
       {/* Mission, Vision, Values */}
-      <section id="values" data-animate className="py-20 px-6 bg-gradient-to-b from-background to-muted/20">
-        <div className="container mx-auto max-w-6xl">
+      <section id="values" data-animate className="py-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-muted/10 to-primary/5"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-secondary"></div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Foundation</h2>
-            <p className="text-xl text-muted-foreground">The principles that guide our academic journey</p>
+            <div className="inline-block mb-4">
+              <span className="text-sm font-semibold text-primary bg-primary/10 px-4 py-2 rounded-full">OUR VALUES</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
+              Our Foundation
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              The principles that guide our academic journey and shape tomorrow's leaders
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <Card 
                 key={value.title}
-                className={`glass-card hover:scale-105 transition-all duration-500 group cursor-pointer ${
-                  visibleSections.has('values') ? 'animate-fade-in' : 'opacity-0'
+                className={`group relative overflow-hidden border-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 transition-all duration-700 cursor-pointer ${
+                  visibleSections.has('values') ? 'animate-slide-up' : 'opacity-0'
                 }`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <CardContent className="p-8 text-center">
-                  <div className="flex justify-center mb-6 text-primary group-hover:scale-110 transition-transform duration-300">
-                    {value.icon}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                
+                <CardContent className="relative p-8 text-center">
+                  <div className="relative mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                      <div className="text-primary group-hover:text-accent transition-colors duration-300">
+                        {value.icon}
+                      </div>
+                    </div>
+                    <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">{value.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                    {value.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
+                    {value.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -221,27 +267,54 @@ const About = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section id="features" data-animate className="py-20 px-6 bg-gradient-to-b from-background to-muted/20">
-        <div className="container mx-auto max-w-6xl">
+      <section id="features" data-animate className="py-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-muted/20 via-background to-accent/5"></div>
+        <div className="absolute inset-0">
+          <div className="absolute w-96 h-96 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-3xl -top-48 -right-48 animate-pulse-glow"></div>
+          <div className="absolute w-80 h-80 bg-gradient-to-l from-secondary/10 to-primary/10 rounded-full blur-3xl -bottom-40 -left-40 animate-pulse-glow" style={{ animationDelay: '3s' }}></div>
+        </div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Why Choose HAC?</h2>
-            <p className="text-xl text-muted-foreground">Excellence in every aspect of education</p>
+            <div className="inline-block mb-4">
+              <span className="text-sm font-semibold text-accent bg-accent/10 px-4 py-2 rounded-full">EXCELLENCE</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-accent to-primary bg-clip-text text-transparent">
+              Why Choose HAC?
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Excellence in every aspect of education, creating leaders for tomorrow
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div 
                 key={feature.title}
-                className={`text-center group ${
-                  visibleSections.has('features') ? 'animate-fade-in' : 'opacity-0'
+                className={`group relative p-8 rounded-2xl bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-all duration-500 cursor-pointer ${
+                  visibleSections.has('features') ? 'animate-bounce-in' : 'opacity-0'
                 }`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="flex justify-center mb-6 text-primary group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                  {feature.icon}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="relative text-center">
+                  <div className="relative mb-6">
+                    <div className="w-24 h-24 mx-auto bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+                      <div className="text-primary group-hover:text-accent transition-colors duration-300">
+                        {feature.icon}
+                      </div>
+                    </div>
+                    <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                    {feature.title}
+                  </h3>
+                  <p className="text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300 leading-relaxed">
+                    {feature.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-foreground">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -355,32 +428,73 @@ const About = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 px-6 bg-gradient-to-r from-primary via-primary-light to-secondary text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Journey with HAC?</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join thousands of successful students who have achieved their dreams with Harvard Academy Charsadda
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={scrollToAdmissions}
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4"
-            >
-              Apply Now
-            </Button>
-            <Button 
-              onClick={handleWhatsApp}
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp Us
-            </Button>
+      <section className="py-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-30"></div>
+        
+        <div className="container mx-auto max-w-5xl text-center relative z-10">
+          <div className="backdrop-blur-sm bg-white/10 rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl">
+            <div className="mb-6">
+              <Star className="w-16 h-16 text-accent-glow mx-auto mb-4 animate-pulse-glow" />
+            </div>
+            
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white leading-tight">
+              Ready to Start Your 
+              <span className="block bg-gradient-to-r from-accent-light to-accent-glow bg-clip-text text-transparent">
+                Journey with HAC?
+              </span>
+            </h2>
+            
+            <div className="w-32 h-1 bg-gradient-to-r from-accent-light to-accent-glow mx-auto mb-8"></div>
+            
+            <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Join thousands of successful students who have achieved their dreams with 
+              <span className="font-semibold text-accent-light"> Harvard Academy Charsadda</span>
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Button 
+                onClick={scrollToAdmissions}
+                size="lg"
+                className="bg-white text-primary hover:bg-accent-light hover:text-white text-xl px-12 py-6 rounded-full shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:scale-105 font-semibold"
+              >
+                <GraduationCap className="w-6 h-6 mr-3" />
+                Apply Now
+              </Button>
+              <Button 
+                onClick={handleWhatsApp}
+                size="lg"
+                variant="outline"
+                className="border-2 border-white/40 text-white hover:bg-white/10 backdrop-blur-sm text-xl px-12 py-6 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
+              >
+                <MessageCircle className="w-6 h-6 mr-3" />
+                WhatsApp Us
+              </Button>
+            </div>
+            
+            <div className="mt-10 flex justify-center items-center gap-6 text-white/70">
+              <div className="flex items-center gap-2">
+                <Trophy className="w-5 h-5 text-accent-light" />
+                <span>Excellence</span>
+              </div>
+              <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+              <div className="flex items-center gap-2">
+                <Shield className="w-5 h-5 text-accent-light" />
+                <span>Trust</span>
+              </div>
+              <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+              <div className="flex items-center gap-2">
+                <Users className="w-5 h-5 text-accent-light" />
+                <span>Community</span>
+              </div>
+            </div>
           </div>
         </div>
+        
+        {/* Floating elements */}
+        <div className="absolute w-20 h-20 bg-white/10 rounded-full top-20 left-20 animate-float blur-sm"></div>
+        <div className="absolute w-16 h-16 bg-accent/20 rounded-full bottom-20 right-20 animate-float blur-sm" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute w-12 h-12 bg-white/15 rounded-full top-1/2 left-10 animate-float blur-sm" style={{ animationDelay: '4s' }}></div>
       </section>
 
       <WhatsAppFloat />
