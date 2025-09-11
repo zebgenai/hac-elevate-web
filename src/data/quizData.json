@@ -1,0 +1,492 @@
+{
+  "9th": {
+    "easy": [
+      {
+        "id": 1,
+        "question": "What is the chemical symbol for water?",
+        "options": ["H2O", "CO2", "NaCl", "CaCO3"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 2,
+        "question": "Which planet is closest to the Sun?",
+        "options": ["Venus", "Mercury", "Earth", "Mars"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "What is 15 + 25?",
+        "options": ["35", "40", "45", "50"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the capital of France?",
+        "options": ["London", "Berlin", "Paris", "Madrid"],
+        "correctAnswer": 2
+      }
+    ],
+    "medium": [
+      {
+        "id": 1,
+        "question": "What is the square root of 144?",
+        "options": ["10", "11", "12", "13"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 2,
+        "question": "Which gas makes up most of Earth's atmosphere?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "What is the formula for the area of a circle?",
+        "options": ["πr²", "2πr", "πd", "r²"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "question": "In which year did World War II end?",
+        "options": ["1944", "1945", "1946", "1947"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the pH of pure water?",
+        "options": ["6", "7", "8", "9"],
+        "correctAnswer": 1
+      }
+    ],
+    "hard": [
+      {
+        "id": 1,
+        "question": "What is the derivative of x³?",
+        "options": ["x²", "2x²", "3x²", "4x²"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 2,
+        "question": "Which element has the atomic number 79?",
+        "options": ["Silver", "Gold", "Platinum", "Mercury"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the speed of light in vacuum?",
+        "options": ["3×10⁸ m/s", "3×10⁹ m/s", "3×10⁷ m/s", "3×10¹⁰ m/s"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "question": "Who developed the theory of relativity?",
+        "options": ["Newton", "Einstein", "Galileo", "Hawking"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the mitochondria known as?",
+        "options": ["Brain of cell", "Powerhouse of cell", "Heart of cell", "Kidney of cell"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "10th": {
+    "easy": [
+      {
+        "id": 1,
+        "question": "What is the largest mammal?",
+        "options": ["Elephant", "Blue Whale", "Giraffe", "Hippo"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "How many sides does a triangle have?",
+        "options": ["2", "3", "4", "5"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the currency of Japan?",
+        "options": ["Yen", "Won", "Yuan", "Rupee"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "question": "Which organ pumps blood in the human body?",
+        "options": ["Liver", "Heart", "Kidney", "Lung"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What color do you get when you mix red and blue?",
+        "options": ["Green", "Yellow", "Purple", "Orange"],
+        "correctAnswer": 2
+      }
+    ],
+    "medium": [
+      {
+        "id": 1,
+        "question": "What is the chemical formula for table salt?",
+        "options": ["NaCl", "KCl", "CaCl2", "MgCl2"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 2,
+        "question": "Who painted the Mona Lisa?",
+        "options": ["Picasso", "Van Gogh", "Da Vinci", "Michelangelo"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "What is 7 × 8?",
+        "options": ["54", "55", "56", "57"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "Which continent is the largest?",
+        "options": ["Africa", "Asia", "North America", "Europe"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the boiling point of water?",
+        "options": ["90°C", "95°C", "100°C", "105°C"],
+        "correctAnswer": 2
+      }
+    ],
+    "hard": [
+      {
+        "id": 1,
+        "question": "What is the integral of 2x?",
+        "options": ["x²", "x² + C", "2x² + C", "x²/2 + C"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "Which scientist discovered penicillin?",
+        "options": ["Fleming", "Pasteur", "Curie", "Darwin"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "question": "What is the smallest unit of matter?",
+        "options": ["Molecule", "Atom", "Proton", "Electron"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "In which year was the first computer invented?",
+        "options": ["1940", "1943", "1946", "1950"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 5,
+        "question": "What is photosynthesis?",
+        "options": ["Respiration", "Food production", "Digestion", "Circulation"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "1st_year": {
+    "easy": [
+      {
+        "id": 1,
+        "question": "What is algebra?",
+        "options": ["Study of numbers", "Study of variables", "Study of shapes", "Study of data"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the value of π (pi)?",
+        "options": ["3.14", "3.15", "3.16", "3.17"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "question": "What is the basic unit of life?",
+        "options": ["Tissue", "Organ", "Cell", "System"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "Who wrote 'Hamlet'?",
+        "options": ["Shakespeare", "Dickens", "Austen", "Twain"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 5,
+        "question": "What is the study of earthquakes called?",
+        "options": ["Geology", "Seismology", "Meteorology", "Astronomy"],
+        "correctAnswer": 1
+      }
+    ],
+    "medium": [
+      {
+        "id": 1,
+        "question": "What is the quadratic formula?",
+        "options": ["ax² + bx + c", "(-b ± √(b²-4ac))/2a", "a² + b² = c²", "x = y + z"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is Newton's first law?",
+        "options": ["F = ma", "Action-reaction", "Inertia", "Gravity"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "What is the powerhouse of the cell?",
+        "options": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the capital of Australia?",
+        "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 5,
+        "question": "What is the freezing point of water?",
+        "options": ["0°C", "32°C", "100°C", "-273°C"],
+        "correctAnswer": 0
+      }
+    ],
+    "hard": [
+      {
+        "id": 1,
+        "question": "What is the limit of sin(x)/x as x approaches 0?",
+        "options": ["0", "1", "∞", "undefined"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is Avogadro's number?",
+        "options": ["6.022 × 10²³", "6.022 × 10²²", "6.022 × 10²⁴", "6.022 × 10²¹"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "question": "What is DNA replication?",
+        "options": ["Cell division", "Protein synthesis", "Copying DNA", "Gene expression"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "Who developed calculus?",
+        "options": ["Newton", "Leibniz", "Both", "Euler"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 5,
+        "question": "What is entropy?",
+        "options": ["Energy", "Disorder", "Temperature", "Pressure"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "2nd_year": {
+    "easy": [
+      {
+        "id": 1,
+        "question": "What is calculus used for?",
+        "options": ["Algebra", "Rates of change", "Statistics", "Geometry"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is organic chemistry?",
+        "options": ["Study of metals", "Study of carbon compounds", "Study of gases", "Study of acids"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "What is genetics?",
+        "options": ["Study of cells", "Study of heredity", "Study of diseases", "Study of environment"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "What is literature?",
+        "options": ["Art", "Written works", "Music", "Dance"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What is democracy?",
+        "options": ["Rule by one", "Rule by few", "Rule by people", "Rule by military"],
+        "correctAnswer": 2
+      }
+    ],
+    "medium": [
+      {
+        "id": 1,
+        "question": "What is the derivative of e^x?",
+        "options": ["e^x", "xe^x", "e^(x-1)", "ln(x)"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 2,
+        "question": "What is benzene's formula?",
+        "options": ["C6H6", "C6H12", "C6H14", "C6H10"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "question": "What is meiosis?",
+        "options": ["Mitosis", "Cell growth", "Gamete formation", "DNA repair"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "Who wrote '1984'?",
+        "options": ["Orwell", "Huxley", "Bradbury", "Wells"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 5,
+        "question": "What is GDP?",
+        "options": ["Government debt", "Gross domestic product", "Global development", "Growth rate"],
+        "correctAnswer": 1
+      }
+    ],
+    "hard": [
+      {
+        "id": 1,
+        "question": "What is L'Hôpital's rule used for?",
+        "options": ["Integration", "Differentiation", "Limits", "Series"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 2,
+        "question": "What is chirality in chemistry?",
+        "options": ["Reactivity", "Handedness", "Polarity", "Solubility"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the central dogma of biology?",
+        "options": ["DNA → RNA → Protein", "RNA → DNA → Protein", "Protein → RNA → DNA", "DNA → Protein → RNA"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "question": "What is postmodernism?",
+        "options": ["Art movement", "Literary movement", "Cultural movement", "All of the above"],
+        "correctAnswer": 3
+      },
+      {
+        "id": 5,
+        "question": "What is macroeconomics?",
+        "options": ["Individual markets", "National economy", "Company finances", "Personal finance"],
+        "correctAnswer": 1
+      }
+    ]
+  },
+  "mdcat": {
+    "easy": [
+      {
+        "id": 1,
+        "question": "What is anatomy?",
+        "options": ["Study of functions", "Study of structure", "Study of diseases", "Study of drugs"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the largest organ in human body?",
+        "options": ["Liver", "Brain", "Skin", "Heart"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 3,
+        "question": "How many chambers does human heart have?",
+        "options": ["2", "3", "4", "5"],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "question": "What is physiology?",
+        "options": ["Study of structure", "Study of functions", "Study of diseases", "Study of behavior"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the basic unit of nervous system?",
+        "options": ["Neuron", "Nephron", "Hepatocyte", "Myocyte"],
+        "correctAnswer": 0
+      }
+    ],
+    "medium": [
+      {
+        "id": 1,
+        "question": "What is osmosis?",
+        "options": ["Movement of solutes", "Movement of water", "Movement of gases", "Movement of ions"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the function of hemoglobin?",
+        "options": ["Digestion", "Oxygen transport", "Immunity", "Clotting"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "Where does protein digestion begin?",
+        "options": ["Mouth", "Stomach", "Small intestine", "Large intestine"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 4,
+        "question": "What is the pH of blood?",
+        "options": ["7.0", "7.4", "7.8", "8.0"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What is insulin?",
+        "options": ["Enzyme", "Hormone", "Vitamin", "Mineral"],
+        "correctAnswer": 1
+      }
+    ],
+    "hard": [
+      {
+        "id": 1,
+        "question": "What is the Krebs cycle?",
+        "options": ["Glycolysis", "Cellular respiration", "Photosynthesis", "Protein synthesis"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "question": "What is the renal threshold for glucose?",
+        "options": ["160 mg/dL", "180 mg/dL", "200 mg/dL", "220 mg/dL"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "question": "What is the Frank-Starling mechanism?",
+        "options": ["Heart regulation", "Kidney function", "Lung capacity", "Brain activity"],
+        "correctAnswer": 0
+      },
+      {
+        "id": 4,
+        "question": "What is apoptosis?",
+        "options": ["Cell growth", "Cell death", "Cell division", "Cell repair"],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "What is the blood-brain barrier?",
+        "options": ["Physical barrier", "Chemical barrier", "Selective barrier", "All of the above"],
+        "correctAnswer": 3
+      }
+    ]
+  }
+}

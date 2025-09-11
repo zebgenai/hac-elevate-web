@@ -19,6 +19,7 @@ const Navigation = () => {
   const navItems = [
     { name: 'Home', href: '/', isRouter: true },
     { name: 'About', href: '/about', isRouter: true },
+    { name: 'Quiz', href: '/quiz', isRouter: true },
     { name: 'Programs', href: '/#programs', isRouter: false },
     { name: 'Admissions', href: '/#admissions', isRouter: false },
     { name: 'Contact', href: '/#contact', isRouter: false },
