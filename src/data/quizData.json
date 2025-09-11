@@ -614,4 +614,47 @@
       {"id": 99, "question": "Which principle explains atomic structure?", "options": ["Quantum mechanics", "Bohr model", "Both A and B", "Neither A nor B"], "correctAnswer": 0},
       {"id": 100, "question": "What is the energy-time uncertainty relation?", "options": ["ΔE·Δt ≥ ℏ/2", "Heisenberg principle", "Both A and B", "Neither A nor B"], "correctAnswer": 2}
     ]
+  },
+  "1st Year": {
+    "easy": [
+      {"id": 1, "question": "What is calculus?", "options": ["Study of change", "Study of numbers", "Study of shapes", "Study of logic"], "correctAnswer": 0},
+      {"id": 2, "question": "What is the derivative of x²?", "options": ["x", "2x", "x²", "2"], "correctAnswer": 1}
+    ],
+    "medium": [
+      {"id": 1, "question": "What is integration?", "options": ["Reverse of differentiation", "Sum of areas", "Both A and B", "Neither"], "correctAnswer": 2},
+      {"id": 2, "question": "What is a limit?", "options": ["Boundary value", "Approaching value", "Maximum value", "Minimum value"], "correctAnswer": 1}
+    ],
+    "hard": [
+      {"id": 1, "question": "What is a differential equation?", "options": ["Equation with derivatives", "Linear equation", "Quadratic equation", "Simple equation"], "correctAnswer": 0},
+      {"id": 2, "question": "What is partial differentiation?", "options": ["Multiple variables", "Single variable", "No variables", "Complex variables"], "correctAnswer": 0}
+    ]
+  },
+  "2nd Year": {
+    "easy": [
+      {"id": 1, "question": "What is organic chemistry?", "options": ["Study of carbon compounds", "Study of metals", "Study of gases", "Study of liquids"], "correctAnswer": 0},
+      {"id": 2, "question": "What is a polymer?", "options": ["Large molecule", "Small molecule", "Ion", "Atom"], "correctAnswer": 0}
+    ],
+    "medium": [
+      {"id": 1, "question": "What is thermodynamics?", "options": ["Study of heat", "Study of motion", "Study of light", "Study of sound"], "correctAnswer": 0},
+      {"id": 2, "question": "What is entropy?", "options": ["Measure of disorder", "Measure of order", "Measure of temperature", "Measure of pressure"], "correctAnswer": 0}
+    ],
+    "hard": [
+      {"id": 1, "question": "What is quantum chemistry?", "options": ["Molecular quantum mechanics", "Classical chemistry", "Nuclear chemistry", "Physical chemistry"], "correctAnswer": 0},
+      {"id": 2, "question": "What is spectroscopy?", "options": ["Study of light interaction", "Study of reactions", "Study of structures", "Study of properties"], "correctAnswer": 0}
+    ]
+  },
+  "MDCAT": {
+    "easy": [
+      {"id": 1, "question": "What is anatomy?", "options": ["Study of body structure", "Study of functions", "Study of diseases", "Study of medicines"], "correctAnswer": 0},
+      {"id": 2, "question": "What is a cell?", "options": ["Basic unit of life", "Tissue", "Organ", "System"], "correctAnswer": 0}
+    ],
+    "medium": [
+      {"id": 1, "question": "What is physiology?", "options": ["Study of body functions", "Study of structure", "Study of diseases", "Study of genetics"], "correctAnswer": 0},
+      {"id": 2, "question": "What is homeostasis?", "options": ["Body balance", "Cell division", "Protein synthesis", "DNA replication"], "correctAnswer": 0}
+    ],
+    "hard": [
+      {"id": 1, "question": "What is molecular biology?", "options": ["Study at molecular level", "Study of organisms", "Study of populations", "Study of ecosystems"], "correctAnswer": 0},
+      {"id": 2, "question": "What is pharmacology?", "options": ["Study of drugs", "Study of diseases", "Study of anatomy", "Study of physiology"], "correctAnswer": 0}
+    ]
   }
+}
